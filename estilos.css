@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.ancho{
+    width: 1200px;
+    margin: auto;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.margen{
+    padding: 15px;
+}
+
+.linearosa{
+    height: 15px;
+    background-color: #ff3281 ;
+}
+
+.pad{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contenedor_imagen{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.textrosado{
+    color: #ff3281;
+    font-weight: bold;
+}
+
+.contenedor_redeslogo{
+    display: inline-block;
+    width: 69%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.contenedor_redeslogo img{
+    margin-left: 15px;
+}
+
+.contenedor_nav{
+    width: 1100px;
+    border: 4px black solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor_nav a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.contenedor_back{
+    background-image: url(imagenes/fondopiedras.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center center;
+    padding: 120px;
+    color: white;
+}
+
+.contenedor_back p{
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.rosado{
+    background-color: #ff3281;
+    border: 1px #ff3281 solid;
+}
+
+.noback{
+    background-color: transparent;
+    border:1px #ff3281 solid;
+}
+
+.contenedor_back a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.contenedor_texto{
+    display: inline-block;
+    vertical-align: text-top;
+    width: 56%;
+    line-height: 35px;
+    margin-right: 10px;
+}
+.contenedor_texto h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contenedor_imgsc{
+    vertical-align: text-top;
+    display: inline-block;
+    width: 42%;
+}
+
+.contenedor_talento{
+    background-color: #fff9f1;
+    margin-bottom: 15px;
+}
+
+.contenedor_arom{
+    display: inline-block;
+    vertical-align: middle;
+    width: 47%;
+}
+
+.contenedor_textarom{
+    display: inline-block;
+    vertical-align: middle;
+    width: 52%;
+}
+
+.contenedor_textarom p{
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contenedor_arom img{
+    border-radius: 10px;
+}
+
+
+.contenedor_form{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-top: 20px;
+}
+
+.contenedor_form h2{
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.contenedor_form p{
+    margin-top: 10px;
+}
+
+.contenedor_inst{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-top: 20px;
+}
+
+.contenedor_inst h2{
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.contenedor_inst iframe{
+    width:100%;
+    height: 250px;
+    margin-top: 40px;
+}
+
+form{
+    width: 90%;
+    border: 4px #ff3281 solid;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 10px;
+    font-size: 18px;
+    width: 100%;
+    height: 35px;
+}
+
+button{
+    margin-top: 10px;
+    display: block;
+    background-color: black;
+    color: white;
+    width: 40%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.contenedor_fot{
+    margin-top: 50px;
+    background-color: #fff9f1;
+}
+
+.contenedor_logofoot{
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+
+.contenedor_info{
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+    text-align: right;
+}
+

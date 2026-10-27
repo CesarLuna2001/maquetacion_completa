@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion completa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+</head>
+<body>
+    <hr class="linearosa ancho">
+    <div class="contenedor_redes ancho margen pad">
+        <div class="contenedor_imagen">
+            <img src="imagenes/logocabecera.jpg" alt="">
+        </div>
+        <div class="contenedor_redeslogo">
+            <img src="imagenes/icono_facebook.jpg" alt="">
+            <img src="imagenes/icono_instagram.jpg" alt="">
+            <img src="imagenes/icono_twitter.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="contenedor_nav ancho centrar">
+        <a href="GALERIA">GALERIA</a>
+        <a href="">PRECIOS</a>
+        <a href="">CONTACTANOS</a>
+        <a href="">EQUIPO</a>
+    </div>
+
+    <div class="contenedor_back ancho centrar">
+        <div class = "cont_text">
+            <h1>PROMOCIONES DE MARZO</h1>
+            <p>Se acerca la epoca de playa y por eso preparamos estas dos promociones ideales para ti.</p>
+        </div>
+        <a class="rosado" href="">Solicitar Promocion</a>
+        <a class="noback" href="">ver Video</a>
+    </div>
+
+    <div class="contenedor_science ancho pad">
+        <div class="contenedor_texto">
+            <h2>Los productos Science of Beauty</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatum incidunt aut sed, vitae quas vel consequuntur dolorum ullam neque assumenda totam. At expedita id minus voluptatem laudantium laboriosam! Voluptates molestias soluta dicta cumque nostrum quas quia totam sint minima. Officiis non consequuntur molestias libero at, asperiores vero nam minima.</p>
+        </div>
+        <div class="contenedor_imgsc">
+            <img src="imagenes/fotovelas.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="contenedor_talento ancho pad">
+        <h2 class="centrar margen">Buscamos talento para integrarlos a nuestro equipo</h2>
+        <div class="contenedor_arom">
+            <img src="imagenes/fotoaromatizante.jpg" alt="">
+        </div>
+
+        <div class="contenedor_textarom">
+            <h3>Puesto de trabajo para Recepcionista</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+            <h3>Puesto de trabajo para Masajista</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+            <h3>Puesto de trabajo para Nutriologo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+        </div>
+    </div>
+
+    <div class="contenedor_noticias ancho pad">
+        <div class="contenedor_form">
+            <h2>Recibe noticias y promociones de SPA SALON</h2>
+            <Servicio>Un lugar para consentirte de pies a cabeza<br>Servicio de salón estética y Spa personalizado</p>
+            <p><span class="textrosado">TELEFONO:</span> 999 420 8871</p>
+            <p><span class="textrosado">CORREO:</span> info@spasalon.com</p>
+
+            <form action="form.php" method="get" id="formulario_noticias">
+                <h3>Tu direccion de correo electronico</h3>
+                <input type="email" name="email" id="email" placeholder="* tunombre@example.com">
+                <button id="btn_validar" type="button">Enviar</button>
+            </form>
+        </div>
+        
+        <div class="contenedor_inst">
+            <h2>Nuestras Instalaciones</h2>
+            <iframe src="https://www.youtube.com/embed/w4qaODLR_Xg?si=dWVBWsvMx7n46xXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="contenedor_fot ancho pad">
+        <div class="contenedor_logofoot">
+            <img src="imagenes/logo_spa.png" alt="">
+        </div>
+
+        <div class="contenedor_info textrosado">
+            <p>Cesar Adrian Luna Tun</p>
+            <p>Programacion web</p>
+            <p>7SA</p>
+        </div>
+    </div>
+    <hr class="linearosa ancho">
+
+
+    <script>
+        let expresionCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        $("#btn_validar").click(function(){
+
+            //validar que el correo no este vacio
+            if($("#email").val().trim() == ''){
+                alert("Escribe tu email");
+                $("#nombre").focus()
+                return 0;
+            }
+            
+             //validar correo
+            if(!expresionCorreo.test($("#email").val().trim())){
+                alert("Escribe un correo valido"); 
+                $("#email").focus();
+                return false; 
+            }
+
+            $("#formulario_noticias").submit();
+        });
+    </script>
+</body>
+</html>
